@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex main"] 1732024510 "main.aux" "main.bbl" "main" 1732024512
+["bibtex main"] 1732024510 "main.aux" "main.bbl" "main" 1732024639
   "/usr/share/texlive/texmf-dist/bibtex/bib/abntex2/abntex2-options.bib" 1357081713 5396 4eb260dac60f150ae608d45252853090 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/abntex2/abntex2-alf.bst" 1543183680 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "main.aux" 1732024512 8940 12f3fbe354dd4fbcae0c811724638a6d "pdflatex"
+  "main.aux" 1732024639 8940 12f3fbe354dd4fbcae0c811724638a6d "pdflatex"
   "referencias.bib" 1732023604 35469 6d3143bf9de39ecb893f1687a0af7f51 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1732024510 "/home/h/Área de Trabalho/Apresentação-TCC2/main.tex" "main.pdf" "main" 1732024512
+["pdflatex"] 1732024637 "/home/h/Área de Trabalho/Apresentação-TCC2/main.tex" "main.pdf" "main" 1732024639
   "/etc/texmf/web2c/texmf.cnf" 1691688234 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/h/Área de Trabalho/Apresentação-TCC2/main.tex" 1732024508 22828 8bebe3c3d368a77be0bdf7247677fcbf ""
+  "/home/h/Área de Trabalho/Apresentação-TCC2/main.tex" 1732024637 22758 43cd4d8ee913d1100ba032b7aa974ed6 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecsi1095.tfm" 1136768653 3584 1a0353d13d3e702865b76e3b1c321b5b ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecss0500.tfm" 1136768653 3584 3cb5b0e5e7e89823423413806ab1d938 ""
@@ -288,12 +288,12 @@
   "Figuras/ProvaJoinOnePreservaDeducao2.png" 1709820452 25500 afd07a4b36b6a32fb3e7e12fe3edfac5 ""
   "Figuras/ProvaJoinPreservaDeducao.png" 1709820452 28750 d08904f19e6c72202d14d02e2686ad5c ""
   "Figuras/ProvaJoinTwoPreservaDeducao.png" 1709820452 14804 6b71cbc174d4637358baf6d4b6994202 ""
-  "main.aux" 1732024512 8940 12f3fbe354dd4fbcae0c811724638a6d "pdflatex"
+  "main.aux" 1732024639 8940 12f3fbe354dd4fbcae0c811724638a6d "pdflatex"
   "main.bbl" 1732024510 1389 477e1442675c6d146c828a0c5cfe0f8f "bibtex main"
-  "main.nav" 1732024512 4376 6c53d75fc5e04174e3e7adcd549cf0f8 "pdflatex"
-  "main.out" 1732024512 1154 ecb9165adad8720c6f1a307cac3fc5dc "pdflatex"
-  "main.tex" 1732024508 22828 8bebe3c3d368a77be0bdf7247677fcbf ""
-  "main.toc" 1732024512 514 151fd4d3329018fbf60a715541d76054 "pdflatex"
+  "main.nav" 1732024639 4376 6c53d75fc5e04174e3e7adcd549cf0f8 "pdflatex"
+  "main.out" 1732024639 1154 ecb9165adad8720c6f1a307cac3fc5dc "pdflatex"
+  "main.tex" 1732024637 22758 43cd4d8ee913d1100ba032b7aa974ed6 ""
+  "main.toc" 1732024639 514 151fd4d3329018fbf60a715541d76054 "pdflatex"
   "udesc.sty" 1709820452 5712 ba1ef0325c185b8439d52c0b7751d4f1 ""
   "udesc_background.pdf" 1709820452 2726 5de2930d9f9a67a76fc52ee92398f069 ""
   "udesc_logo.png" 1709820452 36856 5c95bffe77806277d7b1db35c66a8122 ""
