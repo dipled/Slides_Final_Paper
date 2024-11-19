@@ -11,9 +11,27 @@
 % \usepackage{titlepic}
 \usepackage{graphicx}
 \usepackage{bussproofs}
-\usepackage{multirow}
 \usepackage{changepage}
 \usepackage{xspace}
+\usepackage{bm}
+\usepackage{multirow}							% Multi colunas nas tabelas
+\usepackage{calrsfs}
+
+
+
+
+\DeclareMathAlphabet{\pazocal}{OMS}{zplm}{m}{n}
+
+
+\newcommand{\ling}{\pazocal{L}_{\Sigma}}
+\newcommand{\lfium}{{\normalfont\textbf{LFI1}}}
+\newcommand{\lfi}{{\normalfont\textbf{LFI}}}
+\newcommand{\lfis}{{\normalfont\textbf{LFI}s}}
+
+\newcommand{\conmat}{\vDash_{\pazocal{M}_{\lfium{}}}}
+\newcommand{\conval}{\vDash_{\lfium{}}}
+\newcommand{\conhil}{\vdash_{\lfium{}}}
+
 
 \newcommand{\uglyphi}{\phi} % mantendo o \phi velho
 \renewcommand \phi{\varphi}
@@ -71,420 +89,137 @@
             \begin{itemize}
                 \item[--] As lógicas paraconsistentes quebram o princípio da explosão (definido como $\alpha \to (\neg \alpha \to \beta)$)~\cite{carnielli2007}.
             \end{itemize}
-            \item Lógicas de inconsistência formal (\textbf{LFI}s) são lógicas paraconsistentes que resgatam de maneira \textit{controlada} o princípio da explosão~\cite{Carnielli_Coniglio_2016}.
+            \item Lógicas de inconsistência formal (\lfis{}) são lógicas paraconsistentes que resgatam de maneira \textit{controlada} o princípio da explosão~\cite{Carnielli_Coniglio_2016}.
         \end{itemize}
     \end{frame}
 
     \begin{frame}{Introdução}
         \begin{itemize}
-            \item Lógicas paraconsistentes possuem diversas aplicações em diferentes campos do conhecimento;
+            \item Lógicas paraconsistentes, sobretudo \lfis{}, possuem diversas aplicações em diferentes campos do conhecimento;
+            \begin{itemize}
+                \item[--] Ciências naturais;
+                \item[--] Linguística;
+                \item[--] Computação (bancos de dados com inconsistências).
+            \end{itemize}
+            \item \lfium{}: Uma \lfi{} que internaliza o conceito de inconsistência dentro de sua linguagem (representado por $\circ$).
+            \begin{itemize}
+                \item[--] Resgata a explosividade com o princípio da explosão \textit{gentil} (definido como $\circ \alpha \to (\alpha \to (\neg \alpha \to \beta))$)~\cite{carnielli2000formal}.
+            \end{itemize}
         \end{itemize}
     \end{frame}
 
     \begin{frame}{Introdução}
         \begin{itemize}
-            \item Assistentes de provas são softwares para desenvolvimento de provas formais;
-            \item Coq é um assistente de provas com grande disponibilidade de materiais didáticos e diversas ferramentas que facilitam no desenvolvimento de provas~\cite{silva2019certificacao};
-            \item Fusões de lógicas é um tópico complexo, porém as dificuldades referentes a isso podem ser amenizadas com o uso de assistentes de provas como o Coq.
-            \item Continuação do que foi desenvolvido em~\cite{silveira2020implementacao} e~\cite{silveira2022sound}.
+            \item Assistentes de provas são ferramentas de \textit{softwares} utilizadas no desenvolvimento de provas formais~\cite{Chlipala_2013};
+            \item O Coq é um assistente de provas amplamente utilizado para a verificação formal de \textit{software} e para o desenvolvimento de teoremas, baseando-se no cálculo de construções indutivas~\cite{silva2019certificaccao};
+            \item A implementação de uma biblioteca da \lfium{} em Coq permite provar metateoremas sobre esta lógica de maneira confiável, pois independe de um avaliador para garantir a correção destas provas;
+            \item Análogo ao que foi desenvolvido em~\cite{silveira2020implementacao}.
         \end{itemize}
     \end{frame}
 
     \section[]{Objetivos}
     \begin{frame}{Objetivo Geral}
-        Modelar, no assistente Coq, sistemas de lógicas multimodais resultantes da fusão de lógicas modais mais simples,
-		preservando propriedades das lógicas combinadas.
+        Implementar uma biblioteca de \lfium{} em Coq, assim como desenvolver os metateoremas da correção, da completude e da dedução dentro da biblioteca.
     \end{frame}
 
     \begin{frame}{Objetivos Específicos}
         \begin{enumerate}
-			\item Estudar os principais conceitos de combinações de lógicas, em especial, a fusão;
-			\item Realizar um estudo de caso de fusões de lógicas modais no Coq;
-			\item Modelar, de forma paramétrica, sistemas de lógicas multimodais resultantes de fusão de lógicas modais em Coq.
+			\item Estudar conceitos relevantes sobre lógicas paraconsistentes, em especial a \lfium{};
+            \item Estudar e revisar as provas manuais para completude, correção e metateorema da dedução da \lfium{};
+            \item Realizar um levantamento do estado da arte do desenvolvimento de lógicas paraconsistentes em assistentes de provas;
+            \item Desenvolver uma biblioteca da \lfium{} em Coq, baseada na semântica e sintaxe previamente definidas;
+            \item Desenvolver e verificar formalmente as provas para completude, correção e metateorema da dedução em Coq.
 		\end{enumerate}
     \end{frame}
 
     \section[]{Trabalhos Relacionados}
     \begin{frame}{Trabalhos Relacionados}
         \begin{enumerate}
-            \item \citeauthoronline{benzmuller2010combining} (\citeyear{benzmuller2010combining}) -
-                apresenta fusões de lógicas modais em Cálculo-\(\lambda\) Simplesmente Tipado e modelagem de lógicas combinadas em diversos assistentes de provas;
-            \item \citeauthoronline{fuenmayor2019mechanised} (\citeyear{fuenmayor2019mechanised}) -
-                descrevem lógicas modais resultantes de combinação em Isabelle;
-            \item \citeauthoronline{lescanne2007dynamic} (\citeyear{lescanne2007dynamic}) -
-                descrevem uma lógica modal resultante de fusão em Coq;
-            \item \citeauthoronline{rabe2017identify} (\citeyear{rabe2017identify}) -
-                modela sistemas lógicos e combinações de lógicas em uma linguagem baseada em teoria de tipos chamada M\textsubscript{MT}.
+            \item \citeauthoronline{Villadsen2017} (\citeyear{Villadsen2017}) implementam uma biblioteca de uma lógica paraconsistente com infinitos valores-verdade no assistente de provas Isabelle. Algumas metapropriedades são provadas dentro da biblioteca;
+            \item \citeauthoronline{pdatalog} (\citeyear{pdatalog}) especificam uma linguagem de consulta a banco de dados baseada na lógica de inconsistência formal \lfium{}, chamada P{-}Datalog;
+            \item \citeauthoronline{paralog} (\citeyear{paralog}) descrevem uma linguagem de programação lógica chamada ParaLog\_\textit{e}, que propõe mesclar conceitos de programação lógica clássica com conceitos de inconsistência, utilizando como base a lógica evidencial.
         \end{enumerate}
     \end{frame}
 
-    \section[]{Lógica Modal}
-    % \begin{frame}{Lógica Modal}
-    %     \begin{itemize}
-    %         \item Diversos tipos de lógicas modais - interpretações diferentes para modalidades;
-    %         \item Lógica modal alética contém duas modalidades \(\Box\) e \(\Diamond\) indicam necessidade e possibilidade;
-    %         \item Lógica temporal - formalismo para verificação de programas, ~\cite{pnueli1977temporal} foi o primeiro,
-    %         \citeauthoronline{lamport2002specifying} e TLA+ recentemente.
-    %     \end{itemize}
-    % \end{frame}
+    \section[]{Definições básicas}
 
-    \begin{frame}{Lógica Modal - Linguagem}
-        Menor conjunto \textsf{LM} que respeita:
-
-        \vspace{\baselineskip}
-
-        \begin{enumerate}
-            \item \(\top, \bot \in \mathsf{LM} \)
-            \item \(\mathbb{P} \subseteq \mathsf{LM}\)
-            \item \(\text{Se } \phi \in \mathsf{LM} \text{, então } \circ \phi \in \mathsf{LM}, \text{ sendo } \circ \in \{\Box, \Diamond, \neg\}\)
-            \item \(\text{Se } \phi, \psi \in \mathsf{LM} \text{, então } \phi \circ \psi \in \mathsf{LM}, \text{ sendo } \circ \in \{\land, \lor, \to\}\)
-        \end{enumerate}
+    \begin{frame}{Definições básicas {-} Lógica Tarskiana}
+        \setbool{@fleqn}{true}
+        Uma lógica que respeita estas propriedades é dita Tarskiana:
+        \begin{align}
+            \text{(i) } & \text{Se } \alpha \in \Gamma \text{ então } \Gamma \Vdash \alpha;\tag{reflexividade}                                                                                       \\
+            \text{(ii) } & \text{Se } \Delta \Vdash \alpha \text{ e } \Delta \subseteq \Gamma \text{ então } \Gamma \Vdash \alpha;\tag{monotonicidade}                                                \\
+            \text{(iii) } & \text{Se } \Delta \Vdash \alpha \text{ e } \Gamma \Vdash \delta \text{ para todo } \delta \in \Delta \text{ então } \Gamma \Vdash \alpha.\tag{corte}\\
+            &\tag*\qed{}
+        \end{align}
     \end{frame}
 
-    \begin{frame}{Lógica Modal - Semântica}
-        \begin{block}{Frames}
-            Um frame é um par \(\mathcal{F} = \langle \mathcal{W}, \mathcal{R} \rangle\), onde \(\mathcal{W} \neq \emptyset\) e
-            \(\mathcal{R} \subseteq \mathcal{W} \times \mathcal{W}\).
-        \end{block}
-
-        \vspace{2\baselineskip}
-
-        \begin{block}{Modelos}
-            Modelos são pares de frames e funções de valoração da forma
-            \({\mathcal{M} = \langle \mathcal{F}, \mathcal{V} \rangle}\), onde \(\mathcal{V}\) é uma função total binária
-            definida por \(\mathcal{V}: \mathbb{P} \to 2^{\mathcal{W}}\)
-        \end{block}
-    \end{frame}
-
-    % \begin{frame}{Lógica Modal - Semântica}
-    %     \begin{align*}
-    %         \mathcal{M}, w_0 & \Vdash \top  \\
-    %         \mathcal{M}, w_0 & \nVdash \bot \\
-    %         \mathcal{M}, w_0 & \Vdash p_i \text{ sse } w_0 \in \mathcal{V}(p_i), \text{ para } p_i \in \mathbb{P} \\
-    %         \mathcal{M}, w_0 & \Vdash \neg \phi \text{ sse } \mathcal{M}, w_0 \nVdash \phi \\
-    %         \mathcal{M}, w_0 & \Vdash \phi \land \psi \text{ sse } (\mathcal{M}, w_0 \Vdash \phi \text{ e } \mathcal{M}, w_0 \Vdash \psi) \\
-    %         \mathcal{M}, w_0 & \Vdash \phi \lor \psi \text{ sse } (\mathcal{M}, w_0 \Vdash \phi \text{ ou } \mathcal{M}, w_0 \Vdash \psi) \\
-    %         \mathcal{M}, w_0 & \Vdash \phi \to \psi \text{ sse } (\mathcal{M}, w_0 \nVdash \phi \text{ ou } \mathcal{M}, w_0 \Vdash \psi) \\
-    %         \mathcal{M}, w_0 & \Vdash \Box \phi \text{ sse } \forall w_1 \in \mathcal{W}, (w_0 \mathcal{R} w_1 \to
-    %                          \mathcal{M}, w_1 \Vdash \phi ) \\
-    %         \mathcal{M}, w_0 & \Vdash \Diamond \phi \text{ sse } \exists w_1 \in \mathcal{W}, (w_0 \mathcal{R} w_1 \land
-    %                          \mathcal{M}, w_1 \Vdash \phi )
-    %     \end{align*}
-    % \end{frame}
-
-    \begin{frame}{Lógica Modal - Sintaxe}
-        Axiomatização de Hilbert, 10 axiomas proposicionais:
+    \begin{frame}{Definições básicas {-} Lógica padrão}
+        \setbool{@fleqn}{true}
+        Uma lógica Tarskiana é dita \textit{padrão} caso ela respeite as seguintes condições:
         \begin{align*}
-            &p_0 \to (p_1 \to p_0) \tag{Ax1} \\
-            &(p_0 \to (p_1 \to p_2)) \to ((p_0 \to p_1) \to (p_0 \to p_2)) \tag{Ax2} \\
-            &(\neg p_1 \to \neg p_0) \to (p_0 \to p_1) \tag{Ax3} \\
-            &p_0 \to (p_1 \to (p_0 \land p_1)) \tag{Ax4} \\
-            &(p_0 \land p_1) \to p_0 \tag{Ax5} \\
-            &(p_0 \land p_1) \to p_1 \tag{Ax6} \\
-            &p_0 \to (p_0 \lor p_1) \tag{Ax7} \\
-            &p_1 \to (p_0 \lor p_1) \tag{Ax8} \\
-            &(p_0 \to p_2) \to ((p_1 \to p_2) \to (p_0 \lor p_1) \to p_2) \tag{Ax9} \\
-            &\neg \neg p_0 \to p_0 \tag{Ax10}
+            & \text{~(i) Se } \Gamma \Vdash \alpha \text{, então } \sigma [\Gamma] \Vdash \sigma(\alpha) \text{, para toda substituição } \sigma \text{ de variável}\\&\text{por fórmula.}\\
+            & \text{(ii) Se } \Gamma \Vdash \alpha \text{, então existe conjunto finito } \Gamma_{0} \subseteq \Gamma \text{ tal que } \Gamma_{0} \Vdash \alpha.\tag*\qed{}
+        \end{align*}
+    \end{frame}
+    \begin{frame}{Definições básicas {-} Lógica paraconsistente}
+        Uma lógica Tarskiana é dita \textit{paraconsistente} se ela possuir uma negação $\neg$ e existirem fórmulas quaisquer $\alpha, \beta \in \pazocal{L}$ tal que $\alpha, \neg \alpha \nVdash \beta$.\qed{}
+    \end{frame}
+
+
+    \begin{frame}{Definições básicas {-} \lfi{}}
+       Uma lógica padrão será uma lógica de inconsistência formal (\lfi{}) (em relação a $\bigcirc(p)$ e $\neg$, onde $\bigcirc(p)$ é um conjunto não-vazio de fórmulas dependentes somente da variável $p$) caso respeite as seguintes condições:
+        \begin{align*}
+            \text{(i)} & \text{ Existem}~ \gamma, \delta \in \pazocal{L} \text{, de modo que } \gamma, \neg \gamma \nVdash \delta;               \\
+            \text{(ii)} & \text{ Existem}~ \alpha, \beta \in \pazocal{L} \text{, de modo que:}                                                    \\
+            & \qquad \text{(ii.a)}~ \bigcirc(\alpha), \alpha \nVdash \beta;                                                                         \\
+            & \qquad \text{(ii.b)}~ \bigcirc(\alpha), \neg \alpha \nVdash \beta;                                                                    \\
+            \text{(iii)} & \text{ Para todo}~ \phi, \psi \in \pazocal{L} \text{, tem-se } \bigcirc(\phi), \phi, \neg \phi \Vdash \psi. \tag*\qed{}
         \end{align*}
     \end{frame}
 
-    \begin{frame}{Lógica Modal - Axiomas Modais e Regras de Derivação}
-        Axiomatização de Hilbert, 2 axiomas modais:
+    \section[]{\lfium{}}
+
+    \begin{frame}{\lfium{} {-} Linguagem}
+        Construção indutiva do menor conjunto $\ling{}$ que respeita:
         \begin{align*}
-            &\Box (p_0 \to p_1) \to (\Box p_0 \to \Box p_1) \tag{K}\\
-            &\Diamond (p_0 \lor p_1) \to (\Diamond p_0 \lor \Diamond p_1) \tag{Possibilidade}
+            & \text{1.~}\pazocal{P} \subseteq \ling{}                                                                                                                        \\
+            & \text{2.~Se } \phi \in \ling{}, \text{então } \triangle  \phi \in \ling{}, \text{com } \triangle \in \{\neg, \circ\}                            \\
+            & \text{3.~Se } \phi, \psi \in \ling{}, \text{então } \phi \otimes \psi \in \ling{}, \text{com } \otimes \in \{\land, \lor, \to\} \tag*\qed
         \end{align*}
-
-        E regras de Necessitação e Modus Ponens:
-
-        \vspace{\baselineskip}
-
-        \begin{minipage}{.45\textwidth}
-            \begin{prooftree}
-                \AxiomC{$\Gamma \vdash \phi$}
-                \RightLabel{Nec}
-                \UnaryInfC{$\Gamma \vdash \Box \phi$}
-            \end{prooftree}
-        \end{minipage}%
-        \begin{minipage}{.45\textwidth}
-            \begin{prooftree}
-                \AxiomC{$\Gamma \vdash \phi \to \psi$}
-                \AxiomC{$\Gamma \vdash \phi$}
-                \RightLabel{MP}
-                \BinaryInfC{$\Gamma \vdash \psi$}
-            \end{prooftree}
-        \end{minipage}
     \end{frame}
 
-    \begin{frame}{Lógica Modal - Metapropriedades}
-        % \miguel{Conferir para casos da completude/corretude fortes}
-        % \begin{block}{Corretude Fraca}
-        %     Se há uma derivação sintática para uma fórmula, então há uma derivação semântica em algum frame/modelo:
-        %     \(\vdash \phi \Rightarrow \ \vDash \phi\)
-        % \end{block}
-
-        \begin{block}{Corretude Forte}
-            Se há uma derivação sintática para uma fórmula a partir de uma teoria, então há uma derivação semântica em algum frame/modelo a partir da mesma teoria:
-            \(\Gamma \vdash \phi \Rightarrow \ \Gamma \vDash \phi\)
-        \end{block}
-
-        \vspace{2\baselineskip}
-
-        % \begin{block}{Completude Fraca}
-        %     Se há uma derivação semântica para uma fórmula em algum frame/modelo, então há uma derivação sintática:
-        %     \(\vDash \phi \Rightarrow \ \vdash \phi\)
-        % \end{block}
-
-        \begin{block}{Completude Forte}
-            Se há uma derivação semântica para uma fórmula em algum frame/modelo a partir de uma teoria, então há uma derivação sintática a partir da mesma teoria:
-            \(\Gamma \vDash \phi \Rightarrow \ \Gamma \vdash \phi\)
-        \end{block}
-    \end{frame}
-
-    \subsection[]{Lógicas Multimodais}
-    \begin{frame}{Lógicas Multimodais}
-        Extensão do conceito de lógica modais com apenas uma (ou um par de) modalidade(s) que contém diversas modalidades.
-        A linguagem de uma lógica multimodal é o menor conjunto \(\mathsf{LM}_n\) que respeita:
-
-        \vspace{\baselineskip}
-
-        \begin{enumerate}
-            \item \(\top, \bot \in \mathsf{LM}_n \)
-            \item \(\mathbb{P} \subseteq \mathsf{LM}_n\)
-            \item \(\text{Se } \phi \in \mathsf{LM}_n \text{, então } \circ \phi \in \mathsf{LM}_n, \text{ sendo } \circ \in \{\Box_1, \dots, \Box_n, \Diamond_1, \dots, \Diamond_n, \neg\}\)
-            \item \(\text{Se } \phi, \psi \in \mathsf{LM}_n \text{, então } \phi \circ \psi \in \mathsf{LM}_n, \text{ sendo } \circ \in \{\land, \lor, \to\}\)
-        \end{enumerate}
-
-        % \vspace{\baselineskip}
-
-        % % São adicionados novas instâncias dos axiomas (K) e (Possibilidade), uma para cada \(\Box_i \text{ e }\Diamond_i\).
-    \end{frame}
-
-    \begin{frame}{Lógicas Multimodais}
-        \begin{block}{n-frames}
-            Um n-frame é uma tupla \({\mathcal{F}_n = \langle \mathcal{W}, \mathcal{R}_1,\dots,\mathcal{R}_n \rangle}\), onde \(\mathcal{W} \neq \emptyset\) e
-            \(\mathcal{R}_i \subseteq \mathcal{W} \times \mathcal{W}, 1 \leq i \leq n\).
-        \end{block}
-
-        \vspace{\baselineskip}
-
-        Para cada \(\Box_i/\Diamond_i\) tem-se:
+    \begin{frame}{\lfium{} {-} Sintaxe}
+        Cálculo de Hilbert $\conhil$, com 20 axiomas:
         \begin{align*}
-            &\Box_i (p_0 \to p_1) \to (\Box_i p_0 \to \Box_i p_1)\\
-            &\Diamond_i (p_0 \lor p_1) \to (\Diamond_i p_0 \lor \Diamond_i p_1)
+            & \alpha \to (\beta \to \alpha)                                                     \tag{\textbf{Ax1}}            \label{ax:ax1}\\
+            & (\alpha \to (\beta \to \gamma)) \to ((\alpha \to \beta) \to (\alpha \to \gamma )) \tag{\textbf{Ax2}}            \label{ax:ax2}\\
+            & \alpha \to (\beta \to (\alpha \land \beta))                                       \tag{\textbf{Ax3}}            \label{ax:ax3}\\
+            & (\alpha \land \beta) \to \alpha                                                   \tag{\textbf{Ax4}}            \label{ax:ax4}\\
+            & (\alpha \land \beta) \to \beta                                                    \tag{\textbf{Ax5}}            \label{ax:ax5}\\
+            & \alpha \to (\alpha \lor \beta)                                                    \tag{\textbf{Ax6}}            \label{ax:ax6}\\
+            & \beta \to (\alpha \lor \beta)                                                     \tag{\textbf{Ax7}}            \label{ax:ax7}\\
+            & (\alpha \to \gamma) \to ((\beta \to \gamma) \to ((\alpha \lor \beta) \to \gamma)) \tag{\textbf{Ax8}}            \label{ax:ax8}\\
+            & (\alpha \to \beta) \lor \alpha                                                    \tag{\textbf{Ax9}}            \label{ax:ax9}\\
+            & \alpha \lor \neg \alpha                                                           \tag{\textbf{Ax10}}           \label{ax:ax10}\\
+    \end{align*}
+    \end{frame}
+
+    \begin{frame}{\lfium{} {-} Sintaxe}
+        \begin{align*}
+            & \circ \alpha \to (\alpha \to (\neg \alpha \to \beta))                             \tag{\textbf{bc1}}            \label{ax:axbc1}\\
+            & \neg \neg \alpha \to \alpha                                                       \tag{\textbf{cf}}             \label{ax:axcf}\\
+            & \alpha \to \neg \neg \alpha                                                       \tag{\textbf{ce}}             \label{ax:axce}\\
+            & \neg \circ \alpha \to (\alpha \land \neg \alpha)                                  \tag{\textbf{ci}}             \label{ax:axci}\\
+            & \neg (\alpha \lor \beta) \to (\neg \alpha \land \neg \beta)                       \tag{\textbf{neg}$\lor_{1}$}  \label{ax:axneglor1}\\
+            & (\neg \alpha \land \neg \beta) \to \neg (\alpha \lor \beta)                       \tag{\textbf{neg}$\lor_{2}$}  \label{ax:axneglor2}\\
+            & \neg(\alpha \land \beta) \to (\neg \alpha \lor \neg \beta)                        \tag{\textbf{neg}$\land_{1}$} \label{ax:axnegland1}\\
+            & (\neg \alpha \lor \neg \beta) \to \neg (\alpha \land \beta)                       \tag{\textbf{neg}$\land_{2}$} \label{ax:axnegland2}\\
+            & \neg (\alpha \to \beta) \to(\alpha \land \neg \beta)                              \tag{\textbf{neg}$\to_{1}$}   \label{ax:axnegto1}\\
+            & (\alpha \land \neg \beta) \to \neg(\alpha \to \beta)                              \tag{\textbf{neg}$\to_{2}$}   \label{ax:axnegto2}\\
         \end{align*}
-
-        Regra de Necessitação é substituída por:
-
-        \begin{prooftree}
-            \AxiomC{$\Gamma \vdash \phi$}
-            \RightLabel{\(\textnormal{Nec}_i\)}
-            \UnaryInfC{$\Gamma \vdash \Box_i \phi$}
-        \end{prooftree}
-    \end{frame}
-
-    \section[]{Fusão de Lógicas Modais}
-    \begin{frame}{Fusão de Lógicas Modais}
-        \begin{itemize}
-            \item Método para combinar sistemas lógicos distintos original desenvolvido por~\cite{thomason1984combinations};
-            \item Possibilita especificar sistemas lógicos com múltiplas modalidades distintas, dados dois sistemas lógicos mais simples;
-            \item A fusão de lógicas preserva corretude e completude - sendo \(\mathcal{L}_1\) e \(\mathcal{L}_2\) lógicas corretas/completas
-                    uma lógica \(\mathcal{L}_3\) resultante da sua fusão também será correta/completa;
-            \item Preservação de corretude e completude foi originalmente demonstrada por~\cite{fine1996transfer}, prova se resume a construir
-                    modelos para \(\mathcal{L}_{3}\) a partir de certos modelos para \(\mathcal{L}_1\) e \(\mathcal{L}_2\).
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}{Fusão de Lógicas Modais}
-        \begin{itemize}
-            \item Sendo \(\mathcal{L}_1\) e \(\mathcal{L}_2\) lógicas modais:
-                \begin{itemize}
-                    \item[--] Linguagens são \(\mathsf{LM}_1\) e \(\mathsf{LM}_2\);
-                    \item[--] Correspondentes as classes \(\mathfrak{F}_{1}\) e \(\mathfrak{F}_{2}\)
-                    \item[--] Axiomatizadas pelos conjuntos de axiomas \(\Sigma_1\) e \(\Sigma_2\) com regras \(Nec_1\) e \(Nec_2\) respectivamente.
-                \end{itemize}
-            \item A lógica \(\mathcal{L}_{3} = \mathcal{L}_1 \mathbin{\odot} \mathcal{L}_2\):
-            \begin{itemize}
-                \item[--] Terá linguagem \(\mathsf{LM}_{3} = \mathsf{LM}_{1} \cup \mathsf{LM}_{2}\);
-                \item[--] Será correspondente à classe \(\mathfrak{F}_{3}\) de 2-frames da forma \(\langle \mathcal{W}, \mathcal{R}, \mathcal{S}\rangle\),
-                        onde \(\langle \mathcal{W}, \mathcal{R}\rangle \in \mathfrak{F}_{1}\) e \(\langle \mathcal{W}, \mathcal{S}\rangle \in \mathfrak{F}_{2}\)
-                \item[--] Será axiomatizada por \(\Sigma_3 = \Sigma_1 \oplus \Sigma_2\) com regras \(Nec_1\) e \(Nec_2\).
-            \end{itemize}
-        \end{itemize}
-    \end{frame}
-
-    \section[]{Coq}
-    \begin{frame}{Coq}
-        \begin{itemize}
-            \item Assistente de provas para lógica de alta ordem, capaz de descrever e raciocinar sobre objetos matemáticos~\cite{geuvers2009proof};
-            \item O Coq é baseado em teoria de tipos, devido a Correspondência de Curry-Howard é capaz de expressar sistemas lógicos sofisticados;
-            \item Coq tem uma grande quantidade de ferramentas de automação de provas, e também permite que seus usuários desenvolvam suas próprias ferramentas;
-            \item Essas características tornam Coq uma boa ferramenta para representar sistemas lógicos complexos e operar sobre eles.
-        \end{itemize}
-    \end{frame}
-
-    \section[]{Implementação}
-    \begin{frame}{Implementação}
-        \begin{itemize}
-            \item A biblioteca de lógica modal desenvolvida em~\cite{silveira2020implementacao} e~\cite{silveira2022sound} serviu de base para a implementação;
-            \item Foi provada a corretude do sistema \SisT;
-            \item Foi modelada, de forma paramétrica, a fusão de sistemas sintáticos de lógicas modais;
-            \item Foi modelada a semântica de sistemas multimodais.
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}{Implementação}
-        \begin{figure}[htbp]
-            \centering
-            \includegraphics[width=\linewidth+.7cm,keepaspectratio]{KT4RelativeSoundness.png}
-            \begin{flushleft}
-                \includegraphics[scale=.6]{KT4Soundness.png}
-            \end{flushleft}
-            \caption{Corretude de \SisT}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}{Implementação}
-        \begin{figure}[htbp]
-            \centering
-            \includegraphics[scale=.6]{LinguagemMM.png}
-            \caption{Linguagem do Sistema Multimodal}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}{Implementação}
-        \begin{figure}[htbp]
-            \centering
-            \includegraphics[scale=.6]{VariavelModalidades.png}
-            \caption{Definição da Variável do Número de Modalidades no Sistema}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}{Implementação}
-        \begin{adjustwidth}{-.8cm}{}
-            \begin{figure}[htbp]
-                \centering
-                \includegraphics[scale=.5]{FormulaDedutivel.png}
-                \begin{flushleft}
-                    \includegraphics[scale=.5]{TeoriaDedutivel.png}
-                \end{flushleft}
-                \caption{Definição de Dedutibilidade de Fórmulas e Teorias}
-            \end{figure}
-        \end{adjustwidth}
-    \end{frame}
-
-    \begin{frame}{Implementação}
-        \begin{figure}[htbp]
-            \centering
-            \includegraphics[scale=.6]{FramesModelosMM.png}
-            \caption{Frames e Modelos Multimodais}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}{Implementação}
-        \begin{figure}[htbp]
-            \centering
-            \includegraphics[scale=.6]{FrameMM->Frame.png}
-            \caption{Função de Tradução de Frames Multimodais para Frames Monomodais}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}{Implementação}
-        \begin{adjustwidth}{-.5cm}{}
-            \begin{figure}[htbp]
-                \centering
-                \includegraphics[scale=.475]{ModeloMM->Modelo}
-                \caption{Função de Tradução de Modelos Multimodais para Modelos Monomodais}
-            \end{figure}
-        \end{adjustwidth}
-    \end{frame}
-
-    \begin{frame}{Implementação}
-        \begin{adjustwidth}{-.5cm}{}
-            \begin{figure}[htbp]
-                \centering
-                \includegraphics[scale=.6]{ProvaGeneralizacaoValoracao.png}
-                \caption{Extensão da Valoração}
-            \end{figure}
-        \end{adjustwidth}
-    \end{frame}
-
-    \begin{frame}{Implementação}
-        \begin{adjustwidth}{-1cm}{}
-            \begin{figure}[htbp]
-                \centering
-                \includegraphics[scale=.425]{SistemaKMM.png}
-                \caption{Axiomatização Multimodal do Sistema K}
-            \end{figure}
-        \end{adjustwidth}
-    \end{frame}
-
-    \begin{frame}{Implementação}
-        \begin{adjustwidth}{-.5cm}{}
-            \begin{figure}[htbp]
-                \centering
-                \includegraphics[scale=.45]{FusaoSistemasSintaticos.png}
-                \caption{Definição de Fusão de Sistemas Sintáticos}
-            \end{figure}
-        \end{adjustwidth}
-    \end{frame}
-
-    \begin{frame}{Implementação}
-        \begin{adjustwidth}{-.9cm}{}
-            \begin{figure}[htbp]
-                \centering
-                \includegraphics[scale=.5]{SistemaHilbert.png}
-                \caption{Regras de Derivação do Sistema de Hilbert}
-            \end{figure}
-        \end{adjustwidth}
-    \end{frame}
-
-    \begin{frame}{Implementação}
-        \begin{adjustwidth}{-.7cm}{}
-            \begin{figure}[htbp]
-                \centering
-                \includegraphics[scale=.5]{ProvaGeneralizacaoDerivacaoKMM.png}
-                \caption{Prova de Generalização da Dedução para K\textsubscript{n}}
-            \end{figure}
-        \end{adjustwidth}
-    \end{frame}
-
-    \begin{frame}{Implementação}
-        \begin{adjustwidth}{0cm}{}
-            \begin{figure}[htbp]
-                \centering
-                \begin{flushleft}
-                    \includegraphics[scale=.5]{Figuras/ProvaJoinPreservaDeducao.png}
-                    \includegraphics[scale=.5]{Figuras/ProvaJoinTwoPreservaDeducao.png}
-                \end{flushleft}
-                \caption{Prova da Preservação de Deduções pela Fusão}
-            \end{figure}
-        \end{adjustwidth}
-    \end{frame}
-
-    \begin{frame}{Implementação}
-        \begin{adjustwidth}{0cm}{}
-            \begin{figure}[htbp]
-                \centering
-                \begin{flushleft}
-                    \includegraphics[scale=.5]{Figuras/ProvaJoinOnePreservaDeducao1.png}
-                    \includegraphics[scale=.5]{Figuras/ProvaJoinOnePreservaDeducao2.png}
-                \end{flushleft}
-                \caption{Prova da Preservação de Deduções pela Fusão}
-            \end{figure}
-        \end{adjustwidth}
-    \end{frame}
-
-    \begin{frame}{Dificuldades na Implementação}
-        \begin{itemize}
-            \item Representação da linguagem do sistema multimodal - Não representa união de linguagens;
-            \item Definição de frames multimodais - Não foi possível representar fusão de frames e uso da função \texttt{nth};
-            \item Tradução de modelos multimodais para modelos monomodais;
-            \item Corretude do Sistema \SisT não foi provada pelo método de transferência.
-        \end{itemize}
-    \end{frame}
-
-    \section[]{Conclusões}
+\end{frame}
+\section[]{Conclusões}
     \begin{frame}{Conclusões}
         \begin{itemize}
             \item Uma implementação paramétrica de fusão de sistemas sintáticos semelhante a desenvolvida nesse trabalho não foi encontrado nos trabalhos relacionados;
