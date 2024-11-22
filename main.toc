@@ -3,5 +3,6 @@
 \beamer@sectionintoc {3}{Trabalhos Relacionados}{8}{0}{3}
 \beamer@sectionintoc {4}{Definições básicas}{9}{0}{4}
 \beamer@sectionintoc {5}{{\normalfont \textbf {LFI1}}{}}{13}{0}{5}
-\beamer@sectionintoc {6}{Conclusões}{16}{0}{6}
-\beamer@sectionintoc {7}{Referências}{17}{0}{7}
+\beamer@sectionintoc {6}{Metateoremas}{20}{0}{6}
+\beamer@sectionintoc {7}{Conclusões}{20}{0}{7}
+\beamer@sectionintoc {8}{Referências}{21}{0}{8}

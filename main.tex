@@ -1,4 +1,5 @@
 \documentclass[xcolor=table]{beamer}
+\usepackage{xfrac}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[alf]{abntex2cite}
@@ -27,7 +28,7 @@
 \newcommand{\lfium}{{\normalfont\textbf{LFI1}}}
 \newcommand{\lfi}{{\normalfont\textbf{LFI}}}
 \newcommand{\lfis}{{\normalfont\textbf{LFI}s}}
-
+\newcommand{\meio}{\sfrac{1}{2}}
 \newcommand{\conmat}{\vDash_{\pazocal{M}_{\lfium{}}}}
 \newcommand{\conval}{\vDash_{\lfium{}}}
 \newcommand{\conhil}{\vdash_{\lfium{}}}
@@ -78,7 +79,7 @@
         \tableofcontents
     \end{frame}
 
-    \section[]{Introdução}
+\section[]{Introdução}
     \begin{frame}{Introdução}
         \begin{itemize}
             \item Lógicas paraconsistentes são sistemas não-clássicos que separam a trivialidade da contradição;
@@ -117,7 +118,7 @@
         \end{itemize}
     \end{frame}
 
-    \section[]{Objetivos}
+\section[]{Objetivos}
     \begin{frame}{Objetivo Geral}
         Implementar uma biblioteca de \lfium{} em Coq, assim como desenvolver os metateoremas da correção, da completude e da dedução dentro da biblioteca.
     \end{frame}
@@ -132,7 +133,7 @@
 		\end{enumerate}
     \end{frame}
 
-    \section[]{Trabalhos Relacionados}
+\section[]{Trabalhos Relacionados}
     \begin{frame}{Trabalhos Relacionados}
         \begin{enumerate}
             \item \citeauthoronline{Villadsen2017} (\citeyear{Villadsen2017}) implementam uma biblioteca de uma lógica paraconsistente com infinitos valores-verdade no assistente de provas Isabelle. Algumas metapropriedades são provadas dentro da biblioteca;
@@ -141,7 +142,7 @@
         \end{enumerate}
     \end{frame}
 
-    \section[]{Definições básicas}
+\section[]{Definições básicas}
 
     \begin{frame}{Definições básicas {-} Lógica Tarskiana}
         \setbool{@fleqn}{true}
@@ -178,7 +179,7 @@
         \end{align*}
     \end{frame}
 
-    \section[]{\lfium{}}
+\section[]{\lfium{}}
 
     \begin{frame}{\lfium{} {-} Linguagem}
         Construção indutiva do menor conjunto $\ling{}$ que respeita:
@@ -218,7 +219,124 @@
             & \neg (\alpha \to \beta) \to(\alpha \land \neg \beta)                              \tag{\textbf{neg}$\to_{1}$}   \label{ax:axnegto1}\\
             & (\alpha \land \neg \beta) \to \neg(\alpha \to \beta)                              \tag{\textbf{neg}$\to_{2}$}   \label{ax:axnegto2}\\
         \end{align*}
-\end{frame}
+    \end{frame}
+
+    \begin{frame}{\lfium{} {-} Sintaxe}
+        \centering
+        Regra de inferência \textit{modus ponens}:
+        \begin{prooftree}
+            \AxiomC{$\alpha$}
+            \AxiomC{$\alpha \to \beta$}
+            \RightLabel{MP}
+            \BinaryInfC{$\beta$}
+        \end{prooftree}
+        \qed{}
+    \end{frame}
+
+    \begin{frame}{\lfium{} {-} Semântica}
+        A \lfium{} possui dois sistemas semânticos:
+        \begin{itemize}
+            \item Semântica matricial;
+            \begin{itemize}
+                \item [-] Trivalorada;
+                \item [-] Algébrica.
+            \end{itemize}
+            \item Semântica de valorações.
+            \begin{itemize}
+                \item [-] Bivalorada;
+                \item [-] Não-determinística.
+            \end{itemize}
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{\lfium{} {-} Semântica matricial}
+        $\pazocal{M}_{\lfium{}} = \langle M, D, O \rangle$, com $M = \{1, \meio{}, 0\}$ e $D = \{1, \meio{}\}$.
+        \noindent
+        \begin{minipage}{0.3\textwidth}
+            % Implication (→)
+            \[
+                \begin{array}{c|ccc} %chktex 44%chktex 44
+                    \to & 1 & \meio{} & 0 \\
+                    \hline%chktex 44
+                    1           & 1 & \meio{} & 0 \\
+                    \meio{} & 1 & \meio{} & 0 \\
+                    0           & 1 & 1           & 1 \\
+                \end{array}
+            \]
+        \end{minipage}
+        \begin{minipage}{0.3\textwidth}
+            % Conjunction (∧)
+            \[
+                \begin{array}{c|ccc} %chktex 44%chktex 44
+                    \land       & 1           & \meio{} & 0 \\
+                    \hline%chktex 44
+                    1           & 1           & \meio{} & 0 \\
+                    \meio{} & \meio{} & \meio{} & 0 \\
+                    0           & 0           & 0           & 0 \\
+                \end{array}
+            \]
+        \end{minipage}
+        \begin{minipage}{0.3\textwidth}
+            % Disjunction (∨)
+            \[
+                \begin{array}{c|ccc} %chktex 44%chktex 44
+                    \lor        & 1 & \meio{} & 0           \\
+                    \hline%chktex 44
+                    1           & 1 & 1           & 1           \\
+                    \meio{} & 1 & \meio{} & \meio{} \\
+                    0           & 1 & \meio{} & 0           \\
+                \end{array}
+            \]
+        \end{minipage}
+
+        \vspace{0.5cm}
+
+        \begin{minipage}{0.5\textwidth}
+            % Negation (¬)
+            \[
+                \begin{array}{c|c}%chktex 44
+                                & \neg        \\
+                    \hline%chktex 44
+                    1           & 0           \\
+                    \meio{} & \meio{} \\
+                    0           & 1           \\
+                \end{array}
+            \]
+        \end{minipage}
+        \begin{minipage}{0.3\textwidth}
+            \[
+                \begin{array}{c|c}%chktex 44
+                                & \circ   \\
+                    \hline%chktex 44
+                    1           & 1         \\
+                    \meio{} & 0         \\
+                    0           & 1         \\
+                \end{array}
+            \]
+        \end{minipage}
+
+        $\Gamma \conmat \phi$ sse, para toda valoração $h : \ling{} \to M$ de $\pazocal{M}_{\lfium{}}$, se $h[\Gamma] \subseteq D$ então $h(\phi) \in D$.\qed{}
+    \end{frame}
+
+    \begin{frame}{\lfium{} {-} Semântica de valorações}
+        Uma função $v : \ling{} \to \{1, 0\}$ é uma valoração para a lógica \lfium{} caso ela satisfaça as seguintes cláusulas:
+            \begin{align*}
+                & v(\alpha \land \beta) = 1 \Longleftrightarrow v(\alpha) = 1 \text{ e } v(\beta) = 1\tag{\textbf{$vAnd$}}\label{val:vand}\\
+                & v(\alpha \lor \beta) = 1 \Longleftrightarrow v(\alpha) = 1 \text{ ou } v(\beta) = 1\tag{\textbf{$vOr$}}\label{val:vor}\\
+                & v(\alpha \to \beta) = 1 \Longleftrightarrow v(\alpha) = 0 \text{ ou } v(\beta) = 1\tag{\textbf{$vImp$}}\label{val:vimp}\\
+                & v(\neg \alpha) = 0 \Longrightarrow v(\alpha) = 1\tag{\textbf{$vNeg$}}\label{val:vneg}\\
+                & v(\circ \alpha) = 1 \Longrightarrow v(\alpha) = 0 \text{ ou } v(\neg \alpha) = 0\tag{\textbf{$vCon$}}\label{val:vcon}\\
+                & v(\neg \circ \alpha) = 1 \Longrightarrow v(\alpha) = 1 \text{ e } v(\neg \alpha) = 1\tag{\textbf{$vCi$}}\label{val:vci}\\
+                & v(\neg \neg \alpha) = 1 \Longleftrightarrow v(\alpha) = 1\tag{\textbf{$vDNE$}}\label{val:vdne}\\
+                & v(\neg (\alpha \land \beta)) = 1 \Longleftrightarrow v(\neg \alpha) = 1 \text{ ou } v(\neg \beta) = 1\tag{\textbf{$vDM_{\land}$}}\label{val:vdmand}\\
+                & v(\neg (\alpha \lor \beta)) = 1 \Longleftrightarrow v(\neg \alpha) = 1 \text{ e } v(\neg \beta) = 1\tag{\textbf{$vDM_{\lor}$}}\label{val:vdmor}\\
+                & v(\neg (\alpha \to \beta)) = 1 \Longleftrightarrow v(\alpha) = 1 \text{ e } v(\neg \beta) = 1\tag{\textbf{$vCip_{\to}$}}\label{val:vcip}
+            \end{align*}
+            $\Gamma \conval \phi$ sse, para toda valoração $v$ de \lfium{}, se $v[\Gamma] \subseteq \{1\}$ então $v(\phi) = 1$.\qed{}
+    \end{frame}
+
+\section[]{Metateoremas}
+
 \section[]{Conclusões}
     \begin{frame}{Conclusões}
         \begin{itemize}
