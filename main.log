@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.31)  22 NOV 2024 10:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.31)  22 NOV 2024 13:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -549,40 +549,7 @@ Package: amsthm 2020/05/29 v2.20.6
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasethemes.sty)) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemedefault.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerfontthemedefault.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemedefault.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
 \beamer@dima=\dimen294
 \beamer@dimb=\dimen295
-) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty))) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xfrac/xfrac.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-01-22 L3 programming layer (loader) 
- (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count337
-\l__pdf_internal_box=\box78
-)) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
-) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2023-10-10 L3 Experimental document command parser
-) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
-Package: xtemplate 2023-10-10 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen296
-\l__xtemplate_tmp_int=\count338
-\l__xtemplate_tmp_muskip=\muskip18
-\l__xtemplate_tmp_skip=\skip68
-)
-Package: xfrac 2023-10-10 L3 Experimental split-level fractions
-\l__xfrac_slash_box=\box79
-\l__xfrac_tmp_box=\box80
-\l__xfrac_denominator_bot_sep_dim=\dimen297
-\l__xfrac_numerator_bot_sep_dim=\dimen298
-\l__xfrac_numerator_top_sep_dim=\dimen299
-\l__xfrac_slash_left_sep_dim=\dimen300
-\l__xfrac_slash_right_sep_dim=\dimen301
-\l__xfrac_slash_left_muskip=\muskip19
-\l__xfrac_slash_right_muskip=\muskip20
-
-Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
-(xtemplate)             line 80.
-
-) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty))) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks48
 \inpenc@posthook=\toks49
@@ -594,24 +561,24 @@ Package: abntex2cite 2018/11/24 v-1.9.7 abnTeX2
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count339
-\calc@Bcount=\count340
-\calc@Adimen=\dimen302
-\calc@Bdimen=\dimen303
-\calc@Askip=\skip69
-\calc@Bskip=\skip70
+\calc@Acount=\count337
+\calc@Bcount=\count338
+\calc@Adimen=\dimen296
+\calc@Bdimen=\dimen297
+\calc@Askip=\skip68
+\calc@Bskip=\skip69
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count341
-\calc@Cskip=\skip71
+\calc@Ccount=\count339
+\calc@Cskip=\skip70
 ) (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2abrev.sty) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
-\bibindent=\skip72
-\minimumbiblabelwidth=\skip73
-\ABCIauxlen=\skip74
-\c@ABCIaux=\count342
-\c@ABCImax=\count343
+\bibindent=\skip71
+\minimumbiblabelwidth=\skip72
+\ABCIauxlen=\skip73
+\c@ABCIaux=\count340
+\c@ABCImax=\count341
  (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 ) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
@@ -619,7 +586,7 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 ) (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\biblabelsep=\skip75
+\biblabelsep=\skip74
 LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
 \ABCItoken=\toks50
@@ -628,40 +595,40 @@ Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
  (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count344
-\l_MT_multwidth_dim=\dimen304
-\origjot=\skip76
-\l_MT_shortvdotswithinadjustabove_dim=\dimen305
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen306
-\l_MT_above_intertext_sep=\dimen307
-\l_MT_below_intertext_sep=\dimen308
-\l_MT_above_shortintertext_sep=\dimen309
-\l_MT_below_shortintertext_sep=\dimen310
-\xmathstrut@box=\box81
-\xmathstrut@dim=\dimen311
+\g_MT_multlinerow_int=\count342
+\l_MT_multwidth_dim=\dimen298
+\origjot=\skip75
+\l_MT_shortvdotswithinadjustabove_dim=\dimen299
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen300
+\l_MT_above_intertext_sep=\dimen301
+\l_MT_below_intertext_sep=\dimen302
+\l_MT_above_shortintertext_sep=\dimen303
+\l_MT_below_shortintertext_sep=\dimen304
+\xmathstrut@box=\box78
+\xmathstrut@dim=\dimen305
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks51
 \verbatim@line=\toks52
 \verbatim@in@stream=\read3
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count345
-\lst@gtempboxa=\box82
+\lst@mode=\count343
+\lst@gtempboxa=\box79
 \lst@token=\toks53
-\lst@length=\count346
-\lst@currlwidth=\dimen312
-\lst@column=\count347
-\lst@pos=\count348
-\lst@lostspace=\dimen313
-\lst@width=\dimen314
-\lst@newlines=\count349
-\lst@lineno=\count350
-\lst@maxwidth=\dimen315
+\lst@length=\count344
+\lst@currlwidth=\dimen306
+\lst@column=\count345
+\lst@pos=\count346
+\lst@lostspace=\dimen307
+\lst@width=\dimen308
+\lst@newlines=\count347
+\lst@lineno=\count348
+\lst@maxwidth=\dimen309
  (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count351
-\lst@skipnumbers=\count352
-\lst@framebox=\box83
+\c@lstnumber=\count349
+\lst@skipnumbers=\count350
+\lst@framebox=\box80
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
@@ -676,75 +643,81 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks54
 \XKV@tempa@toks=\toks55
 )
-\XKV@depth=\count353
+\XKV@depth=\count351
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
 Package: fcprefix 2012/09/28
  (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
 Package: fcnumparser 2017/06/15
-\fc@digit@counter=\count354
+\fc@digit@counter=\count352
 ))
-\c@padzeroesN=\count355
-\fc@tmpcatcode=\count356
-\@DT@modctr=\count357
-\@ordinalctr=\count358
-\@orgargctr=\count359
-\@strctr=\count360
-\@tmpstrctr=\count361
-\@DT@loopN=\count362
-\@DT@X=\count363
+\c@padzeroesN=\count353
+\fc@tmpcatcode=\count354
+\@DT@modctr=\count355
+\@ordinalctr=\count356
+\@orgargctr=\count357
+\@strctr=\count358
+\@tmpstrctr=\count359
+\@DT@loopN=\count360
+\@DT@X=\count361
 ) (/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime-defaults.sty
 Package: datetime-defaults 2013/09/10
 )
-\@day=\count364
-\@month=\count365
-\@year=\count366
-\c@HOUR=\count367
-\c@HOURXII=\count368
-\c@MINUTE=\count369
-\c@TOHOUR=\count370
-\c@TOMINUTE=\count371
-\c@SECOND=\count372
-\currenthour=\count373
-\currentminute=\count374
-\currentsecond=\count375
+\@day=\count362
+\@month=\count363
+\@year=\count364
+\c@HOUR=\count365
+\c@HOURXII=\count366
+\c@MINUTE=\count367
+\c@TOHOUR=\count368
+\c@TOMINUTE=\count369
+\c@SECOND=\count370
+\currenthour=\count371
+\currentminute=\count372
+\currentsecond=\count373
 Package datetime Info: No datetime.cfg file found, using default settings on input line 308.
-\@dtctr=\count376
-\dayofyear=\count377
-\dayofweek=\count378
+\@dtctr=\count374
+\dayofyear=\count375
+\dayofweek=\count376
 LaTeX Info: Redefining \today on input line 736.
 \dt@a=\toks56
 \dt@b=\toks57
 ) (/usr/share/texlive/texmf-dist/tex/latex/bussproofs/bussproofs.sty
 Proof Tree (bussproofs) style macros. Version 1.1.
-\theLevel=\count379
-\myMaxLevel=\count380
-\myBoxA=\box84
-\myBoxB=\box85
-\myBoxC=\box86
-\myBoxD=\box87
-\myBoxLL=\box88
-\myBoxRL=\box89
-\thisAboveSkip=\dimen316
-\thisBelowSkip=\dimen317
-\newScoreStart=\dimen318
-\newScoreEnd=\dimen319
-\newCenter=\dimen320
-\displace=\dimen321
-\leftLowerAmt=\dimen322
-\rightLowerAmt=\dimen323
-\scoreHeight=\dimen324
-\scoreDepth=\dimen325
-\htLbox=\dimen326
-\htRbox=\dimen327
-\htRRbox=\dimen328
-\htRRRbox=\dimen329
-\htAbox=\dimen330
-\htCbox=\dimen331
+\theLevel=\count377
+\myMaxLevel=\count378
+\myBoxA=\box81
+\myBoxB=\box82
+\myBoxC=\box83
+\myBoxD=\box84
+\myBoxLL=\box85
+\myBoxRL=\box86
+\thisAboveSkip=\dimen310
+\thisBelowSkip=\dimen311
+\newScoreStart=\dimen312
+\newScoreEnd=\dimen313
+\newCenter=\dimen314
+\displace=\dimen315
+\leftLowerAmt=\dimen316
+\rightLowerAmt=\dimen317
+\scoreHeight=\dimen318
+\scoreDepth=\dimen319
+\htLbox=\dimen320
+\htRbox=\dimen321
+\htRRbox=\dimen322
+\htRRRbox=\dimen323
+\htAbox=\dimen324
+\htCbox=\dimen325
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip76
+\multirow@cntb=\count379
+\multirow@dima=\skip77
+\bigstrutjot=\dimen326
 ) (/usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count381
-\cp@tempcnt=\count382
+\c@cp@cntr=\count380
+\cp@tempcnt=\count381
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
@@ -761,12 +734,39 @@ Package bm Info: No bold for \U/msa/m/n, using \pmb.
 Package bm Info: No bold for \U/msb/m/n, using \pmb.
 \symboldpureletters=\mathgroup10
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
-) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip77
-\multirow@cntb=\count383
-\multirow@dima=\skip78
-\bigstrutjot=\dimen332
+) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xfrac/xfrac.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-01-22 L3 programming layer (loader) 
+ (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count382
+\l__pdf_internal_box=\box87
+)) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
+) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-10-10 L3 Experimental document command parser
+) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+Package: xtemplate 2023-10-10 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen327
+\l__xtemplate_tmp_int=\count383
+\l__xtemplate_tmp_muskip=\muskip18
+\l__xtemplate_tmp_skip=\skip78
+)
+Package: xfrac 2023-10-10 L3 Experimental split-level fractions
+\l__xfrac_slash_box=\box88
+\l__xfrac_tmp_box=\box89
+\l__xfrac_denominator_bot_sep_dim=\dimen328
+\l__xfrac_numerator_bot_sep_dim=\dimen329
+\l__xfrac_numerator_top_sep_dim=\dimen330
+\l__xfrac_slash_left_sep_dim=\dimen331
+\l__xfrac_slash_right_sep_dim=\dimen332
+\l__xfrac_slash_left_muskip=\muskip19
+\l__xfrac_slash_right_muskip=\muskip20
+
+Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
+(xtemplate)             line 80.
+
 ) (/usr/share/texlive/texmf-dist/tex/latex/calrsfs/calrsfs.sty
 \symrsfscript=\mathgroup11
 )
