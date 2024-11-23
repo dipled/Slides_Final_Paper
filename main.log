@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.31)  23 NOV 2024 11:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.31)  23 NOV 2024 13:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -936,19 +936,19 @@ File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./udesc_background.pdf>] (./main.toc) [2
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 87.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 91.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 87.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 91.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 87.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 91.
  (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
-LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 87.
+LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 91.
  (/usr/share/texlive/texmf-dist/tex/latex/calrsfs/OMSrsfs.fd) [3
 
 ] [4
@@ -959,20 +959,20 @@ LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 8
 
 ] [7
 
-] [8
-
 ]
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 146.
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 135.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
-) [9
+) [8
 
 ]
-Overfull \hbox (11.98785pt too wide) detected at line 155
+Overfull \hbox (11.98785pt too wide) detected at line 144
 []
  []
 
-[10
+[9
+
+] [10
 
 ] [11
 
@@ -981,8 +981,6 @@ Overfull \hbox (11.98785pt too wide) detected at line 155
 ] [13
 
 ] [14
-
-] [15
 
 ]
 \myBox1=\box91
@@ -993,45 +991,53 @@ Overfull \hbox (11.98785pt too wide) detected at line 155
 \myScoreStart2=\dimen338
 \myCenter2=\dimen339
 \myScoreEnd2=\dimen340
- [16
+ [15
 
-] [17
+] [16
 
 ]
-LaTeX Font Info:    Calculating math sizes for size <7.665> on input line 309.
+LaTeX Font Info:    Calculating math sizes for size <7.665> on input line 298.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.83249> not available
-(Font)              size <5> substituted on input line 309.
+(Font)              size <5> substituted on input line 298.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.83249> not available
-(Font)              size <5> substituted on input line 309.
+(Font)              size <5> substituted on input line 298.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <3.83249> not available
-(Font)              size <5> substituted on input line 309.
+(Font)              size <5> substituted on input line 298.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <3.83249> not available
-(Font)              size <5> substituted on input line 309.
+(Font)              size <5> substituted on input line 298.
 
 
 LaTeX Font Warning: Font shape `OMS/rsfs/m/n' in size <3.83249> not available
-(Font)              size <5> substituted on input line 309.
+(Font)              size <5> substituted on input line 298.
 
-[18
+[17
+
+] [18
 
 ] [19
 
 ] [20
 
-] (./main.bbl) [21
+] [21
 
- </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [22
-
+] [22
 
 ] [23
+
+] (./main.bbl) [24
+
+ </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [25
+
+
+] [26
 
 
 ]
@@ -1058,18 +1064,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 3563A373BC78202093CFDD3D01F4ECC0;851.
  ) 
 Here is how much of TeX's memory you used:
- 27002 strings out of 474222
- 513283 string characters out of 5748733
+ 27075 strings out of 474222
+ 514929 string characters out of 5748733
  1960975 words of memory out of 5000000
- 48523 multiletter control sequences out of 15000+600000
- 614255 words of font info for 186 fonts, out of 8000000 for 9000
+ 48588 multiletter control sequences out of 15000+600000
+ 615784 words of font info for 188 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,21n,123p,1049b,685s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb>
-Output written on main.pdf (23 pages, 267105 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb>
+Output written on main.pdf (26 pages, 303899 bytes).
 PDF statistics:
- 477 PDF objects out of 1000 (max. 8388607)
- 323 compressed objects within 4 object streams
- 93 named destinations out of 1000 (max. 500000)
- 355 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 518 PDF objects out of 1000 (max. 8388607)
+ 347 compressed objects within 4 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 391 words of extra memory for PDF output out of 10000 (max. 10000000)
 
