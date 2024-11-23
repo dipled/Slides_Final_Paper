@@ -303,7 +303,12 @@
                 & v(\alpha \lor \beta) = 1 \Longleftrightarrow v(\alpha) = 1 \text{ ou } v(\beta) = 1\tag{\textbf{$vOr$}}\label{val:vor}\\
                 & v(\alpha \to \beta) = 1 \Longleftrightarrow v(\alpha) = 0 \text{ ou } v(\beta) = 1\tag{\textbf{$vImp$}}\label{val:vimp}\\
                 & v(\neg \alpha) = 0 \Longrightarrow v(\alpha) = 1\tag{\textbf{$vNeg$}}\label{val:vneg}\\
-                & v(\circ \alpha) = 1 \Longrightarrow v(\alpha) = 0 \text{ ou } v(\neg \alpha) = 0\tag{\textbf{$vCon$}}\label{val:vcon}\\
+                & v(\circ \alpha) = 1 \Longrightarrow v(\alpha) = 0 \text{ ou } v(\neg \alpha) = 0\tag{\textbf{$vCon$}}\label{val:vcon}
+            \end{align*}
+    \end{frame}
+
+    \begin{frame}{\lfium{} {-} Semântica de valorações}
+            \begin{align*}
                 & v(\neg \circ \alpha) = 1 \Longrightarrow v(\alpha) = 1 \text{ e } v(\neg \alpha) = 1\tag{\textbf{$vCi$}}\label{val:vci}\\
                 & v(\neg \neg \alpha) = 1 \Longleftrightarrow v(\alpha) = 1\tag{\textbf{$vDNE$}}\label{val:vdne}\\
                 & v(\neg (\alpha \land \beta)) = 1 \Longleftrightarrow v(\neg \alpha) = 1 \text{ ou } v(\neg \beta) = 1\tag{\textbf{$vDM_{\land}$}}\label{val:vdmand}\\
