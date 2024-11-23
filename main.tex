@@ -108,21 +108,19 @@
         \begin{itemize}
             \item Assistentes de provas são ferramentas de \textit{softwares} utilizadas no desenvolvimento de provas formais~\cite{Chlipala_2013};
             \item O Coq é um assistente de provas amplamente utilizado para a verificação formal de \textit{software} e para o desenvolvimento de teoremas, baseando-se no cálculo de construções indutivas~\cite{silva2019certificaccao};
-            \item A implementação de uma biblioteca da \lfium{} em Coq permite provar metateoremas sobre esta lógica de maneira confiável, pois independe de um avaliador para garantir a correção destas provas;
-            \item Análogo ao que foi desenvolvido em~\cite{silveira2020implementacao}.
+            \item As provas desenvolvidas no assistente possuem um grau de confiabilidade dificilmente encontrado em provas manuais pois independe de um avaliador para garantir sua correção.
         \end{itemize}
     \end{frame}
 
 \section[]{Objetivos}
     \begin{frame}{Objetivo Geral}
-        Implementar uma biblioteca de \lfium{} em Coq, assim como desenvolver os metateoremas da correção, da completude e da dedução dentro da biblioteca.
+        Implementar uma biblioteca de \lfium{} em Coq, assim como desenvolver os metateoremas da correção, da completude e da dedução dentro da biblioteca, análogo ao que foi desenvolvido em~\cite{silveira2020implementacao}.
     \end{frame}
 
     \begin{frame}{Objetivos Específicos}
         \begin{enumerate}
 			\item Estudar conceitos relevantes sobre lógicas paraconsistentes, em especial a \lfium{};
             \item Estudar e revisar as provas manuais para completude, correção e metateorema da dedução da \lfium{};
-            \item Realizar um levantamento do estado da arte do desenvolvimento de lógicas paraconsistentes em assistentes de provas;
             \item Desenvolver uma biblioteca da \lfium{} em Coq, baseada na semântica e sintaxe previamente definidas;
             \item Desenvolver e verificar formalmente as provas para completude, correção e metateorema da dedução em Coq.
 		\end{enumerate}
@@ -166,11 +164,11 @@
     \begin{frame}{Definições básicas {-} \lfi{}}
        Uma lógica padrão será uma lógica de inconsistência formal (\lfi{}) (em relação a $\bigcirc(p)$ e $\neg$, onde $\bigcirc(p)$ é um conjunto não-vazio de fórmulas dependentes somente da variável $p$) caso respeite as seguintes condições:
         \begin{align*}
-            \text{(i)} & \text{ Existem}~ \gamma, \delta \in \pazocal{L} \text{, de modo que } \gamma, \neg \gamma \nVdash \delta;               \\
+            \text{(i)} & \text{ Existem}~ \alpha, \beta \in \pazocal{L} \text{, de modo que } \alpha, \neg \alpha \nVdash \beta;               \\
             \text{(ii)} & \text{ Existem}~ \alpha, \beta \in \pazocal{L} \text{, de modo que:}                                                    \\
             & \qquad \text{(ii.a)}~ \bigcirc(\alpha), \alpha \nVdash \beta;                                                                         \\
             & \qquad \text{(ii.b)}~ \bigcirc(\alpha), \neg \alpha \nVdash \beta;                                                                    \\
-            \text{(iii)} & \text{ Para todo}~ \phi, \psi \in \pazocal{L} \text{, tem-se } \bigcirc(\phi), \phi, \neg \phi \Vdash \psi. \tag*\qed{}
+            \text{(iii)} & \text{ Para todo}~ \alpha, \beta \in \pazocal{L} \text{, tem-se } \bigcirc(\alpha), \alpha, \neg \alpha \Vdash \beta. \tag*\qed{}
         \end{align*}
     \end{frame}
 
