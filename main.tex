@@ -77,24 +77,23 @@
 \section[]{Introdução}
     \begin{frame}{Introdução}
         \begin{itemize}
-            \item Lógica não-clássica é qualquer lógica que quebra algum dos princípios da lógica clássica;
-            \item Lógicas paraconsistentes são sistemas não-clássicos que rompem com o princípio da explosão;
-            \begin{itemize}
-                \item[--] Usualmente, lógicas assumem que toda teoria contraditória é uma teoria trivial, ou seja, uma teoria com todas as fórmulas.
-            \end{itemize}
-            \item Lógicas de inconsistência formal (\lfis{}) são lógicas paraconsistentes que resgatam de maneira \textit{controlada} o princípio da explosão~\cite{Carnielli_Coniglio_2016}.
+            \item Lógica não-clássica: quebra algum dos princípios da lógica clássica;
+            \item Lógicas paraconsistentes: rompem com o princípio da explosão (contradição = trivialidade);
+            \item Lógicas de inconsistência formal (\lfis{}): lógicas paraconsistentes que resgatam de maneira \textit{controlada} o princípio da explosão~\cite{Carnielli_Coniglio_2016}.
             \begin{itemize}
                 \item[--] Aplicações em diferentes campos do conhecimento (ciências naturais, linguística, computação);
-                \item[--] A \lfium{} resgata a explosividade com o princípio da explosão \textit{gentil} (definido como $\circ \alpha \to (\alpha \to (\neg \alpha \to \beta))$)~\cite{carnielli2000formal}.
+                \item[--] \lfium{}: $\circ \alpha \to (\alpha \to (\neg \alpha \to \beta))$ princípio da explosão \textit{gentil}~\cite{carnielli2000formal}.
             \end{itemize}
         \end{itemize}
     \end{frame}
 
     \begin{frame}{Introdução}
         \begin{itemize}
-            \item Assistentes de provas são ferramentas de \textit{softwares} utilizadas no desenvolvimento de provas formais~\cite{Chlipala_2013};
-            \item O Coq é um assistente de provas amplamente utilizado, baseando no cálculo de construções indutivas (CIC)~\cite{silva2019certificaccao};
-            \item As provas desenvolvidas no assistente possuem independem de um avaliador para garantir sua correção, facilitando o processo de verificá-las.
+            \item Assistentes de provas: ferramentas de \textit{softwares} utilizadas no desenvolvimento de provas formais~\cite{Chlipala_2013};
+            \item Coq: um assistente de provas amplamente utilizado, baseado no cálculo de construções indutivas (CIC)~\cite{silva2019certificaccao};
+            \begin{itemize}
+                \item[--] Provas independem de um avaliador para garantir sua correção, facilitando o processo de verificá-las.
+            \end{itemize}
         \end{itemize}
     \end{frame}
 
