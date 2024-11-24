@@ -208,6 +208,13 @@
             \RightLabel{MP}
             \BinaryInfC{$\beta$}
         \end{prooftree}
+
+        Uma derivação $\Gamma \conhil \alpha$ é uma sequência de fórmulas $\phi_1 \ldots \phi_n$, com $\phi_n = \alpha$ onde toda fórmula $\phi_i$ respeita alguma das seguintes condições:
+        \begin{enumerate}
+            \item $\phi_i \in \Gamma$;
+            \item $\phi_i$ é um axioma;
+            \item $\phi_i$ é resultado de MP em das fórmulas $\phi_j$ e $\phi_k$ com $k, j < i$.
+        \end{enumerate} 
         \qed{}
     \end{frame}
 

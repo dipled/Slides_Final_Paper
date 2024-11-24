@@ -1,30 +1,16 @@
 # Fdb version 4
-<<<<<<< HEAD
-["bibtex main"] 1732385457.90205 "main.aux" "main.bbl" "main" 1732455496.69393 0
+["bibtex main"] 1732456024.66307 "main.aux" "main.bbl" "main" 1732456060.9772 0
   "./referencias.bib" 1732030280.39783 35469 6d3143bf9de39ecb893f1687a0af7f51 ""
   "/usr/share/texlive/texmf-dist/bibtex/bib/abntex2/abntex2-options.bib" 1357081713 5396 4eb260dac60f150ae608d45252853090 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/abntex2/abntex2-alf.bst" 1543183680 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "main.aux" 1732455496.12295 10567 4d0a85a7453fb1fd33df129ebd6ea61f "pdflatex"
-=======
-["bibtex main"] 1732385457.90205 "main.aux" "main.bbl" "main" 1732395068.04717 0
-  "./referencias.bib" 1732395049.86202 35469 6d3143bf9de39ecb893f1687a0af7f51 ""
-  "/usr/share/texlive/texmf-dist/bibtex/bib/abntex2/abntex2-options.bib" 1357081713 5396 4eb260dac60f150ae608d45252853090 ""
-  "/usr/share/texlive/texmf-dist/bibtex/bst/abntex2/abntex2-alf.bst" 1543183680 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "main.aux" 1732395067.58966 10567 4d0a85a7453fb1fd33df129ebd6ea61f "pdflatex"
->>>>>>> origin/main
+  "main.aux" 1732456060.50536 10567 4d0a85a7453fb1fd33df129ebd6ea61f "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-<<<<<<< HEAD
-["pdflatex"] 1732455493.94664 "/home/hln/Desktop/Slides_Final_Paper/main.tex" "main.pdf" "main" 1732455496.69417 0
+["pdflatex"] 1732456058.4351 "/home/hln/Desktop/Slides_Final_Paper/main.tex" "main.pdf" "main" 1732456060.97741 0
   "/etc/texmf/web2c/texmf.cnf" 1725130517.68644 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/hln/Desktop/Slides_Final_Paper/main.tex" 1732455493.77898 20820 7465758cbbcb1cae596b7e406baf87a5 ""
-=======
-["pdflatex"] 1732395065.31117 "/home/hln/Desktop/Slides_Final_Paper/main.tex" "main.pdf" "main" 1732395068.04735 0
-  "/etc/texmf/web2c/texmf.cnf" 1725138383.93977 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/hln/Desktop/Slides_Final_Paper/main.tex" 1732395065.07366 20749 7f5ccc1a439fa2c9a61fafc922b4b72c ""
->>>>>>> origin/main
+  "/home/hln/Desktop/Slides_Final_Paper/main.tex" 1732456058.29042 21247 d8ab730ea86b87039b5a1e226545f295 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm" 1136768653 2796 d37c29814a6717720ee1a7c9a0b2c3b8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecsi1000.tfm" 1136768653 3584 87c00098505ed1ab5849d7a05016cb73 ""
@@ -304,45 +290,31 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1636152094 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb" 1636152094 103607 8dec125a771685406ae21998f7cfb6f2 ""
-  "/usr/share/texmf/fonts/type1/public/cm-super/sfsi1095.pfb" 1724883492.39038 106965 72348192f7f7f7c44b4558f2996b4879 ""
-  "/usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb" 1724883492.41838 99931 c4bf5cbd82bc527fffa6bd4047ab5d6a ""
-  "/usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb" 1724883492.41838 95441 e322369dec2b43bb317c506a4a44deaa ""
+  "/usr/share/texmf/fonts/type1/public/cm-super/sfsi1095.pfb" 1725130527.88226 106965 72348192f7f7f7c44b4558f2996b4879 ""
+  "/usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb" 1725130527.90826 99931 c4bf5cbd82bc527fffa6bd4047ab5d6a ""
+  "/usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb" 1725130527.90926 95441 e322369dec2b43bb317c506a4a44deaa ""
   "/usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb" 1636152094 94269 4665f0d253cc3cca9439f89dbf2b9f33 ""
-  "/usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb" 1724883492.41838 97272 e31c1319e3ff43b442c57e2c8f2acc52 ""
-  "/usr/share/texmf/fonts/type1/public/cm-super/sfss1200.pfb" 1724883492.41838 95792 fb800ffa2babe7bd5fafc1817d8f1313 ""
-  "/usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb" 1724883492.41838 90944 dacec9e1206365a1c204a7fc6d00fb08 ""
-  "/usr/share/texmf/fonts/type1/public/cm-super/sfsx0600.pfb" 1724883492.43038 148906 ef3c8a0d06b691c4cb521b136f4a0517 ""
-  "/usr/share/texmf/fonts/type1/public/cm-super/sfsx0800.pfb" 1724883492.43438 151158 a9e6f19f14a78f43f630e10a3f0953bb ""
+  "/usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb" 1725130527.91026 97272 e31c1319e3ff43b442c57e2c8f2acc52 ""
+  "/usr/share/texmf/fonts/type1/public/cm-super/sfss1200.pfb" 1725130527.91126 95792 fb800ffa2babe7bd5fafc1817d8f1313 ""
+  "/usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb" 1725130527.91126 90944 dacec9e1206365a1c204a7fc6d00fb08 ""
+  "/usr/share/texmf/fonts/type1/public/cm-super/sfsx0600.pfb" 1725130527.92326 148906 ef3c8a0d06b691c4cb521b136f4a0517 ""
+  "/usr/share/texmf/fonts/type1/public/cm-super/sfsx0800.pfb" 1725130527.92526 151158 a9e6f19f14a78f43f630e10a3f0953bb ""
   "/usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb" 1636152094 149078 1f78530235f7e16c583e4692f7af72b1 ""
-  "/usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb" 1724883492.43438 145807 7e6525044e63a61de8529743665d16c8 ""
-  "/usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb" 1724883492.43838 148301 cb90e68db88ca98c49afbaaab3ac1967 ""
-  "/usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb" 1724883492.46238 175641 e30a691dc1402b08fd6535cf8a31e5b7 ""
+  "/usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb" 1725130527.92626 145807 7e6525044e63a61de8529743665d16c8 ""
+  "/usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb" 1725130527.92826 148301 cb90e68db88ca98c49afbaaab3ac1967 ""
+  "/usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb" 1725130527.95326 175641 e30a691dc1402b08fd6535cf8a31e5b7 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
-<<<<<<< HEAD
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1725130535.52512 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1725130557 8215063 18a736d81f4279ab322d9033a5977b35 ""
-  "main.aux" 1732455496.12295 10567 4d0a85a7453fb1fd33df129ebd6ea61f "pdflatex"
-  "main.bbl" 1732385458.04105 3127 b70d70f53b3601003f401c9e49f128c6 "bibtex main"
-  "main.nav" 1732455496.12495 3400 37a7cc4d3ff1bed44ebaa4b6c420031e "pdflatex"
-  "main.out" 1732455496.12495 851 3563a373bc78202093cfdd3d01f4ecc0 "pdflatex"
-  "main.tex" 1732455493.77898 20820 7465758cbbcb1cae596b7e406baf87a5 ""
-  "main.toc" 1732455496.12495 395 9786da233121b0a1db5f41de2aa873c4 "pdflatex"
+  "main.aux" 1732456060.50536 10567 4d0a85a7453fb1fd33df129ebd6ea61f "pdflatex"
+  "main.bbl" 1732456024.80325 3127 b70d70f53b3601003f401c9e49f128c6 "bibtex main"
+  "main.nav" 1732456060.50636 3400 37a7cc4d3ff1bed44ebaa4b6c420031e "pdflatex"
+  "main.out" 1732456060.50636 851 3563a373bc78202093cfdd3d01f4ecc0 "pdflatex"
+  "main.tex" 1732456058.29042 21247 d8ab730ea86b87039b5a1e226545f295 ""
+  "main.toc" 1732456060.50636 395 9786da233121b0a1db5f41de2aa873c4 "pdflatex"
   "udesc.sty" 1732030280.39783 5712 ba1ef0325c185b8439d52c0b7751d4f1 ""
   "udesc_background.pdf" 1732030280.39883 2726 5de2930d9f9a67a76fc52ee92398f069 ""
   "udesc_logo.png" 1732030280.39983 36856 5c95bffe77806277d7b1db35c66a8122 ""
-=======
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1725139240.83117 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1725139300 8213082 74fa3b61c9569ff17a19d156338e3513 ""
-  "main.aux" 1732395067.58966 10567 4d0a85a7453fb1fd33df129ebd6ea61f "pdflatex"
-  "main.bbl" 1732395049.85902 3127 b70d70f53b3601003f401c9e49f128c6 "bibtex main"
-  "main.nav" 1732395067.59166 3400 37a7cc4d3ff1bed44ebaa4b6c420031e "pdflatex"
-  "main.out" 1732395067.59166 851 3563a373bc78202093cfdd3d01f4ecc0 "pdflatex"
-  "main.tex" 1732395065.07366 20749 7f5ccc1a439fa2c9a61fafc922b4b72c ""
-  "main.toc" 1732395067.59166 395 9786da233121b0a1db5f41de2aa873c4 "pdflatex"
-  "udesc.sty" 1732395049.86202 5712 ba1ef0325c185b8439d52c0b7751d4f1 ""
-  "udesc_background.pdf" 1732395049.86202 2726 5de2930d9f9a67a76fc52ee92398f069 ""
-  "udesc_logo.png" 1732395049.86402 36856 5c95bffe77806277d7b1db35c66a8122 ""
->>>>>>> origin/main
   (generated)
   "main.aux"
   "main.log"
