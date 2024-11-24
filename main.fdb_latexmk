@@ -1,16 +1,16 @@
 # Fdb version 4
-["bibtex main"] 1732385457.90205 "main.aux" "main.bbl" "main" 1732385476.9292 0
+["bibtex main"] 1732385457.90205 "main.aux" "main.bbl" "main" 1732455496.69393 0
   "./referencias.bib" 1732030280.39783 35469 6d3143bf9de39ecb893f1687a0af7f51 ""
   "/usr/share/texlive/texmf-dist/bibtex/bib/abntex2/abntex2-options.bib" 1357081713 5396 4eb260dac60f150ae608d45252853090 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/abntex2/abntex2-alf.bst" 1543183680 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "main.aux" 1732385476.37893 10567 4d0a85a7453fb1fd33df129ebd6ea61f "pdflatex"
+  "main.aux" 1732455496.12295 10567 4d0a85a7453fb1fd33df129ebd6ea61f "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1732385474.09608 "/home/hln/Desktop/Slides_Final_Paper/main.tex" "main.pdf" "main" 1732385476.92943 0
+["pdflatex"] 1732455493.94664 "/home/hln/Desktop/Slides_Final_Paper/main.tex" "main.pdf" "main" 1732455496.69417 0
   "/etc/texmf/web2c/texmf.cnf" 1725130517.68644 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/hln/Desktop/Slides_Final_Paper/main.tex" 1732385473.92995 20749 7f5ccc1a439fa2c9a61fafc922b4b72c ""
+  "/home/hln/Desktop/Slides_Final_Paper/main.tex" 1732455493.77898 20820 7465758cbbcb1cae596b7e406baf87a5 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm" 1136768653 2796 d37c29814a6717720ee1a7c9a0b2c3b8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecsi1000.tfm" 1136768653 3584 87c00098505ed1ab5849d7a05016cb73 ""
@@ -75,6 +75,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1248133631 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb" 1248133631 24420 52dbb8e8aa0069a1b987309557f8d303 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb" 1248133631 25150 e0d09798d232ab9d00c5c0a8df6cc22d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb" 1248133631 25168 33771b85f45c82138dd7745db7092d1c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
@@ -305,12 +306,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1725130535.52512 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1725130557 8215063 18a736d81f4279ab322d9033a5977b35 ""
-  "main.aux" 1732385476.37893 10567 4d0a85a7453fb1fd33df129ebd6ea61f "pdflatex"
+  "main.aux" 1732455496.12295 10567 4d0a85a7453fb1fd33df129ebd6ea61f "pdflatex"
   "main.bbl" 1732385458.04105 3127 b70d70f53b3601003f401c9e49f128c6 "bibtex main"
-  "main.nav" 1732385476.37993 3400 37a7cc4d3ff1bed44ebaa4b6c420031e "pdflatex"
-  "main.out" 1732385476.37993 851 3563a373bc78202093cfdd3d01f4ecc0 "pdflatex"
-  "main.tex" 1732385473.92995 20749 7f5ccc1a439fa2c9a61fafc922b4b72c ""
-  "main.toc" 1732385476.38093 395 9786da233121b0a1db5f41de2aa873c4 "pdflatex"
+  "main.nav" 1732455496.12495 3400 37a7cc4d3ff1bed44ebaa4b6c420031e "pdflatex"
+  "main.out" 1732455496.12495 851 3563a373bc78202093cfdd3d01f4ecc0 "pdflatex"
+  "main.tex" 1732455493.77898 20820 7465758cbbcb1cae596b7e406baf87a5 ""
+  "main.toc" 1732455496.12495 395 9786da233121b0a1db5f41de2aa873c4 "pdflatex"
   "udesc.sty" 1732030280.39783 5712 ba1ef0325c185b8439d52c0b7751d4f1 ""
   "udesc_background.pdf" 1732030280.39883 2726 5de2930d9f9a67a76fc52ee92398f069 ""
   "udesc_logo.png" 1732030280.39983 36856 5c95bffe77806277d7b1db35c66a8122 ""
