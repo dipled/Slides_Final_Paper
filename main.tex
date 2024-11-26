@@ -141,13 +141,14 @@
             & \text{(ii) Se } \Gamma \Vdash \alpha \text{, então existe conjunto finito } \Gamma_{0} \subseteq \Gamma \text{ tal que } \Gamma_{0} \Vdash \alpha.\tag*\qed{}
         \end{align*}
     \end{frame}
+
     \begin{frame}{Definições básicas {-} Lógica paraconsistente}
-        Uma lógica Tarskiana é dita \textit{paraconsistente} se ela possuir uma negação $\neg$ e existirem fórmulas quaisquer $\alpha, \beta \in \pazocal{L}$ tal que $\alpha, \neg \alpha \nVdash \beta$.\qed{}
+        Uma lógica Tarskiana é dita \textit{paraconsistente} se existirem fórmulas quaisquer $\alpha, \beta \in \pazocal{L}$ tal que $\alpha, \neg \alpha \nVdash \beta$.\qed{}
     \end{frame}
 
 
     \begin{frame}{Definições básicas {-} \lfi{}}
-       Uma lógica padrão será uma lógica de inconsistência formal (\lfi{}) (em relação a $\bigcirc(p)$ e $\neg$, onde $\bigcirc(p)$ é um conjunto não-vazio de fórmulas dependentes somente da variável $p$) caso respeite as seguintes condições:
+       Uma lógica padrão será uma lógica de inconsistência formal (\lfi{}) (considerando $\bigcirc(\alpha)$ é um conjunto não-vazio de fórmulas dependentes somente da fórmula $\alpha$) caso respeite as seguintes condições:
         \begin{align*}
             \text{(i)} & \text{ Existem}~ \alpha, \beta \in \pazocal{L} \text{, de modo que } \alpha, \neg \alpha \nVdash \beta;               \\
             \text{(ii)} & \text{ Existem}~ \alpha, \beta \in \pazocal{L} \text{, de modo que:}                                                    \\
