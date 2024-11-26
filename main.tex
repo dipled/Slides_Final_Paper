@@ -99,7 +99,7 @@
 
 \section[]{Objetivos}
     \begin{frame}{Objetivo Geral}
-        Implementar uma biblioteca de \lfium{} em Coq, assim como desenvolver os metateoremas da correção, da completude e da dedução dentro da biblioteca, análogo ao que foi desenvolvido em~\cite{silveira2020implementacao}.
+        Implementar uma biblioteca de \lfium{} em Coq, assim como desenvolver os metateoremas da correção, da completude e da dedução dentro da biblioteca, análogo ao que foi desenvolvido por Silveira~\citeyear{silveira2020implementacao}.
     \end{frame}
 
     \begin{frame}{Objetivos Específicos}
@@ -339,30 +339,30 @@
 
     \begin{frame}{Metateoremas {-} Dedução e correção}
         \begin{block}{Metateorema da dedução}
-            $\Gamma, \alpha \conhil \beta \Longleftrightarrow \Gamma \conhil \alpha \to \beta$.
+            $\Gamma, \alpha \conhil \beta$ se, e somente se, $\Gamma \conhil \alpha \to \beta$.
         \end{block}
 
         \begin{block}{Correção em relação a semântica matricial}
-            $\Gamma \conhil \alpha \Longrightarrow \Gamma \conmat \alpha$.
+            Se $\Gamma \conhil \alpha $, então $ \Gamma \conmat \alpha$.
         \end{block}
     
         \begin{block}{Correção em relação a semântica de bivalorações}
-            $\Gamma \conhil \alpha \Longrightarrow \Gamma \conval \alpha$.
+            Se $\Gamma \conhil \alpha$, então $\Gamma \conval \alpha$.
         \end{block}
 
     \end{frame}
 
     \begin{frame}{Metateoremas {-} Completude e equivalência entre semânticas}
         \begin{block}{Completude em relação a semântica matricial}
-            $\Gamma \conmat \alpha \Longrightarrow \Gamma \conhil \alpha$.
+            Se $\Gamma \conmat \alpha$, então $\Gamma \conhil \alpha$.
         \end{block}
 
         \begin{block}{Completude em relação a semântica de bivalorações}
-           $\Gamma \conval \alpha \Longrightarrow \Gamma \conhil \alpha$.
+           Se $\Gamma \conval \alpha$, então $\Gamma \conhil \alpha$.
         \end{block}
 
         \begin{block}{Equivalência entre semânticas}
-            $\Gamma \conmat \alpha \Longleftrightarrow \Gamma \conval \alpha$.
+            $\Gamma \conmat \alpha$ se, e somente se $\Gamma \conval \alpha$.
         \end{block}
     \end{frame}
         
