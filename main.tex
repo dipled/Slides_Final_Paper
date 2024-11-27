@@ -77,11 +77,11 @@
 \section[]{Introdução}
     \begin{frame}{Introdução}
         \begin{itemize}
-            \item Lógica não-clássica: quebra algum dos princípios da lógica clássica;
-            \item Lógicas paraconsistentes: rompem com o princípio da explosão (contradição = trivialidade);
-            \item Lógicas de inconsistência formal (\lfis{}): lógicas paraconsistentes que resgatam de maneira \textit{controlada} o princípio da explosão~\cite{Carnielli_Coniglio_2016}.
+            \item \textbf{Lógica não-clássica}: quebra algum dos princípios da lógica clássica;
+            \item \textbf{Lógicas paraconsistentes}: rompem com o princípio da explosão (\textbf{contradição = trivialidade});
+            \item \textbf{Lógicas de inconsistência formal} (\lfis{}): lógicas paraconsistentes que resgatam de maneira \textit{controlada} o princípio da explosão~\cite{Carnielli_Coniglio_2016}\\(\textbf{contradição + consistência = trivialidade}).
             \begin{itemize}
-                \item[--] Aplicações em diferentes campos do conhecimento (ciências naturais, linguística, computação);
+                \item[--] Aplicações em diferentes campos do conhecimento (ciências naturais, linguística, \textbf{computação});
                 \item[--] \lfium{}: $\circ \alpha \to (\alpha \to (\neg \alpha \to \beta))$ princípio da explosão \textit{gentil}~\cite{carnielli2000formal}.
             \end{itemize}
         \end{itemize}
@@ -89,10 +89,11 @@
 
     \begin{frame}{Introdução}
         \begin{itemize}
-            \item Assistentes de provas: ferramentas de \textit{softwares} utilizadas no desenvolvimento de provas formais~\cite{Chlipala_2013};
-            \item Coq: um assistente de provas amplamente utilizado, baseado no cálculo de construções indutivas (CIC)~\cite{silva2019certificaccao};
+            \item \textbf{Assistentes de provas}: ferramentas de \textit{softwares} utilizadas no desenvolvimento de provas formais~\cite{Chlipala_2013};
+            \item \textbf{Coq}: um assistente de provas amplamente utilizado, baseado no cálculo de construções indutivas (CIC)~\cite{silva2019certificaccao};
             \begin{itemize}
-                \item[--] Provas independem de um avaliador para garantir sua correção, facilitando o processo de verificá-las.
+                \item[--] Provas independem de um avaliador para garantir sua correção, facilitando o processo de verificá-las;
+                \item[--] Implementar uma biblioteca de uma lógica em Coq permite escrever metateoremas com um grau de confiabilidade dificilmente encontrado em provas manuais.
             \end{itemize}
         \end{itemize}
     \end{frame}
@@ -115,7 +116,7 @@
     \begin{frame}{Trabalhos Relacionados}
         \begin{enumerate}
             \item \citeauthoronline{Villadsen2017} (\citeyear{Villadsen2017}) implementam uma biblioteca de uma lógica paraconsistente com infinitos valores-verdade no assistente de provas Isabelle. Algumas metapropriedades são provadas dentro da biblioteca;
-            \item \citeauthoronline{pdatalog} (\citeyear{pdatalog}) especificam uma linguagem de consulta a banco de dados baseada na \lfium{}, chamada P{-}Datalog;
+            \item \citeauthoronline{pdatalog} (\citeyear{pdatalog}) especificam uma linguagem de consulta a banco de dados baseada na \lfium{}, chamada P{-}Datalog, evidenciando uma aplicação da \lfium{} no contexto da computação;
             \item \citeauthoronline{paralog} (\citeyear{paralog}) descrevem uma linguagem de programação lógica chamada ParaLog\_\textit{e}, que propõe mesclar conceitos de programação lógica clássica com conceitos de inconsistência, utilizando como base a lógica evidencial.
         \end{enumerate}
     \end{frame}
@@ -377,9 +378,10 @@
             \item Define a linguagem, sintaxe e semântica da \lfium{};
             \item Revisa e desenvolve manualmente metateoremas para este sistema.
         \end{itemize}
+        Os resultados contemplados no TCC1, sobretudo o desenvolvimento manual dos metateoremas permitem, o prosseguimento do TCC2.
     \end{frame}
 
-    \begin{frame}{Cronograma}
+    \begin{frame}{Prosseguimento do TCC2}
         \begin{enumerate}
             \item Definir a linguagem da \lfium{} na biblioteca;
             \item Implementar a sintaxe (cálculo de Hilbert) da \lfium{};
@@ -388,7 +390,7 @@
         \end{enumerate}
     \end{frame}
 
-    \begin{frame}{Cronograma}
+    \begin{frame}{Prosseguimento do TCC2}
     
         \begin{table}[htbp]
             \centering
