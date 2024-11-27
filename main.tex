@@ -161,7 +161,7 @@
 \section[]{LFI1}
 
     \begin{frame}{\lfium{} {-} Linguagem}
-        Sendo $\pazocal{P} = \{p_i ~|~ \mathbb{N}\}$, a linguagem é dada pela construção indutiva do menor conjunto $\ling{}$ que respeita:
+        Sendo $\pazocal{P} = \{p_i ~|~ i \in \mathbb{N}\}$ e $\Sigma = \{\neg, \circ, \land, \lor, \to\}$, a linguagem é dada pela construção indutiva do menor conjunto $\ling{}$ que respeita:
         \begin{align*}
             & \text{1.~}\pazocal{P} \subseteq \ling{}                                                                                                                        \\
             & \text{2.~Se } \phi \in \ling{}, \text{então } \triangle  \phi \in \ling{}, \text{com } \triangle \in \{\neg, \circ\}                            \\
@@ -376,35 +376,6 @@
             \item Define a linguagem, sintaxe e semântica da \lfium{};
             \item Revisa e desenvolve manualmente metateoremas para este sistema.
         \end{itemize}
-    \end{frame}
-
-    \begin{frame}{Conclusões {-} TCC2}
-        Prosseguimento do TCC2:
-        \begin{enumerate}
-            \item Definir a linguagem da \lfium{} na biblioteca;
-            \item Implementar a sintaxe (cálculo de Hilbert) da \lfium{};
-            \item Implementar os sistemas semânticos (matricial e bivaloração) da \lfium{};
-            \item Desenvolver metateoremas da \lfium{} na biblioteca.
-        \end{enumerate}
-        \begin{table}[htbp]
-            \centering
-            \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-              \hline
-              \multirow{2}{*}{\textbf{\small{Item}}} & \textbf{\small{2024/1}} & \multicolumn{6}{c|}{\textbf{\small{2024/2}}} \\
-              \cline{2-8}
-              & \textbf{Dez} & \textbf{Jan} & \textbf{Fev} & \textbf{Mar} & \textbf{Abr} & \textbf{Maio} & \textbf{Jun} \\
-              \hline
-              \textbf{\small{1}}  & \cellcolor{gray} & \cellcolor{gray} &  &  &  &  & \\
-              \hline
-              \textbf{\small{2}}  &  & \cellcolor{gray} & \cellcolor{gray} &  &  &  & \\
-              \hline
-              \textbf{\small{3}}  &  & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} &  &  & \\
-              \hline
-              \textbf{\small{4}}  &  &  & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray}\\
-              \hline
-            \end{tabular}
-            \caption{Cronograma Proposto para o TCC2}
-          \end{table}
     \end{frame}
     \section[]{Referências}
     \begin{frame}[allowframebreaks]{Referências}
