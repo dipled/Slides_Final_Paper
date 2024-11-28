@@ -100,14 +100,14 @@
 
 \section[]{Objetivos}
     \begin{frame}{Objetivo Geral}
-        Implementar uma biblioteca de \lfium{} em Coq, assim como desenvolver os metateoremas da correção, da completude e da dedução dentro da biblioteca, análogo ao que foi desenvolvido por Silveira~(\citeyear{silveira2020implementacao}).
+        Implementar uma biblioteca de \lfium{} em Coq, assim como desenvolver os metateoremas da dedução, da correção e da completude dentro da biblioteca, análogo ao que foi desenvolvido por Silveira~(\citeyear{silveira2020implementacao}).
     \end{frame}
 
     \begin{frame}{Objetivos Específicos}
         \begin{enumerate}
 			\item Estudar conceitos relevantes sobre lógicas paraconsistentes, em especial a \lfium{};
-            \item Estudar e revisar as provas manuais para o metateorema da dedução, correção e completude da \lfium{};
-            \item Desenvolver uma biblioteca da \lfium{} em Coq, baseada na semântica e sintaxe previamente definidas;
+            \item Revisar e desenvolver as provas manuais para o metateorema da dedução, correção e completude da \lfium{};
+            \item Desenvolver uma biblioteca da \lfium{} em Coq, baseada na sintaxe e semântica previamente definidas;
             \item Desenvolver e verificar formalmente as provas para o metateorema da dedução, correção e completude.
 		\end{enumerate}
     \end{frame}
@@ -168,6 +168,7 @@
             & \text{2.~Se } \phi \in \ling{}, \text{então } \triangle  \phi \in \ling{}, \text{com } \triangle \in \{\neg, \circ\}                            \\
             & \text{3.~Se } \phi, \psi \in \ling{}, \text{então } \phi \otimes \psi \in \ling{}, \text{com } \otimes \in \{\land, \lor, \to\} \tag*\qed
         \end{align*}
+        Na \lfium{}, $\bigcirc(\alpha) = \{\circ \alpha\}$.
     \end{frame}
 
     \begin{frame}{\lfium{} {-} Sintaxe}
